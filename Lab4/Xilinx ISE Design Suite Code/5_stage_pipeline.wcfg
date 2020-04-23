@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/wilso/Downloads/CZ3001_Lab4_U1820540H/lab4/pip_test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="pip_test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="26" />
+   <wave_markers>
+      <marker time="195000000" label="" />
+      <marker time="165000000" label="" />
+      <marker time="615000000" label="" />
+      <marker time="585000000" label="" />
+      <marker time="555000000" label="" />
+      <marker time="525000000" label="" />
+      <marker time="495000000" label="" />
+   </wave_markers>
+   <wvobject fp_name="divider89" type="divider">
+      <obj_property name="label">FETCH</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pip_test/PCOUT" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PCOUT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PCOUT[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider89" type="divider">
+      <obj_property name="label">DECODE</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pip_test/INST" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">INST[31:0]</obj_property>
+      <obj_property name="ObjectShortName">INST[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pip_test/rdata1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rdata1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata1[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pip_test/rdata2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rdata2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata2[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider89" type="divider">
+      <obj_property name="label">EXECUTE</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pip_test/rdata1_ID_EXE" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rdata1_ID_EXE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata1_ID_EXE[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pip_test/rdata2_ID_EXE" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rdata2_ID_EXE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata2_ID_EXE[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pip_test/imm_ID_EXE" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">imm_ID_EXE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">imm_ID_EXE[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pip_test/rdata2_imm_ID_EXE" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rdata2_imm_ID_EXE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata2_imm_ID_EXE[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pip_test/aluop_ID_EXE" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">aluop_ID_EXE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">aluop_ID_EXE[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pip_test/alusrc_ID_EXE" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">alusrc_ID_EXE</obj_property>
+      <obj_property name="ObjectShortName">alusrc_ID_EXE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pip_test/waddr_ID_EXE" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">waddr_ID_EXE[4:0]</obj_property>
+      <obj_property name="ObjectShortName">waddr_ID_EXE[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pip_test/aluout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">aluout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">aluout[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider89" type="divider">
+      <obj_property name="label">MEMORY</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pip_test/waddr_EXE_MEM" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">waddr_EXE_MEM[4:0]</obj_property>
+      <obj_property name="ObjectShortName">waddr_EXE_MEM[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pip_test/aluout_EXE_MEM" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">aluout_EXE_MEM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">aluout_EXE_MEM[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pip_test/rdata2_EXE_MEM" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rdata2_EXE_MEM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata2_EXE_MEM[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider89" type="divider">
+      <obj_property name="label">WRITEBACK</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pip_test/dmemdata" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dmemdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dmemdata[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pip_test/waddr_MEM_WB" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">waddr_MEM_WB[4:0]</obj_property>
+      <obj_property name="ObjectShortName">waddr_MEM_WB[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pip_test/aluout_MEM_WB" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">aluout_MEM_WB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">aluout_MEM_WB[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pip_test/wdata_WB" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wdata_WB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wdata_WB[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pip_test/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pip_test/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 53: Port <arg fmt="%s" index="1">npc_ID_EXE</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 79: Using initial value of <arg fmt="%s" index="1">rst</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="816" delta="old" >"C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\memory.v" Line 36: System function call <arg fmt="%s" index="1">feof</arg> not supported
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="817" delta="old" >"C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\memory.v" Line 49: System task <arg fmt="%s" index="1">fclose</arg> ignored for synthesis
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 56: Assignment to <arg fmt="%s" index="1">PCOUT</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 57: Assignment to <arg fmt="%s" index="1">INST</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 58: Assignment to <arg fmt="%s" index="1">rdata1</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 59: Assignment to <arg fmt="%s" index="1">rdata2</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 60: Assignment to <arg fmt="%s" index="1">rdata1_ID_EXE</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 61: Assignment to <arg fmt="%s" index="1">rdata2_ID_EXE</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 62: Assignment to <arg fmt="%s" index="1">imm_ID_EXE</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 63: Assignment to <arg fmt="%s" index="1">rdata2_imm_ID_EXE</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 64: Assignment to <arg fmt="%s" index="1">aluop_ID_EXE</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 65: Assignment to <arg fmt="%s" index="1">alusrc_ID_EXE</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 66: Assignment to <arg fmt="%s" index="1">waddr_ID_EXE</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 67: Assignment to <arg fmt="%s" index="1">aluout</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 68: Assignment to <arg fmt="%s" index="1">waddr_EXE_MEM</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 69: Assignment to <arg fmt="%s" index="1">aluout_EXE_MEM</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 70: Assignment to <arg fmt="%s" index="1">rdata2_EXE_MEM</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 71: Assignment to <arg fmt="%s" index="1">dmemdata</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 72: Assignment to <arg fmt="%s" index="1">waddr_MEM_WB</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 73: Assignment to <arg fmt="%s" index="1">aluout_MEM_WB</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 74: Assignment to <arg fmt="%s" index="1">wdata_WB</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v</arg>&quot; line <arg fmt="%d" index="2">53</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">uut</arg>&gt; of block &lt;<arg fmt="%s" index="4">pipelined_regfile_5stage</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">pip_test</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v</arg>&quot; line <arg fmt="%s" index="2">53</arg>: Output port &lt;<arg fmt="%s" index="3">PCOUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uut</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v</arg>&quot; line <arg fmt="%s" index="2">53</arg>: Output port &lt;<arg fmt="%s" index="3">INST</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uut</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v</arg>&quot; line <arg fmt="%s" index="2">53</arg>: Output port &lt;<arg fmt="%s" index="3">rdata1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uut</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v</arg>&quot; line <arg fmt="%s" index="2">53</arg>: Output port &lt;<arg fmt="%s" index="3">rdata2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uut</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v</arg>&quot; line <arg fmt="%s" index="2">53</arg>: Output port &lt;<arg fmt="%s" index="3">rdata1_ID_EXE</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uut</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v</arg>&quot; line <arg fmt="%s" index="2">53</arg>: Output port &lt;<arg fmt="%s" index="3">rdata2_ID_EXE</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uut</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v</arg>&quot; line <arg fmt="%s" index="2">53</arg>: Output port &lt;<arg fmt="%s" index="3">npc_ID_EXE</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uut</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v</arg>&quot; line <arg fmt="%s" index="2">53</arg>: Output port &lt;<arg fmt="%s" index="3">imm_ID_EXE</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uut</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v</arg>&quot; line <arg fmt="%s" index="2">53</arg>: Output port &lt;<arg fmt="%s" index="3">rdata2_imm_ID_EXE</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uut</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v</arg>&quot; line <arg fmt="%s" index="2">53</arg>: Output port &lt;<arg fmt="%s" index="3">aluop_ID_EXE</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uut</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v</arg>&quot; line <arg fmt="%s" index="2">53</arg>: Output port &lt;<arg fmt="%s" index="3">waddr_ID_EXE</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uut</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v</arg>&quot; line <arg fmt="%s" index="2">53</arg>: Output port &lt;<arg fmt="%s" index="3">aluout</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uut</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v</arg>&quot; line <arg fmt="%s" index="2">53</arg>: Output port &lt;<arg fmt="%s" index="3">waddr_EXE_MEM</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uut</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v</arg>&quot; line <arg fmt="%s" index="2">53</arg>: Output port &lt;<arg fmt="%s" index="3">aluout_EXE_MEM</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uut</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v</arg>&quot; line <arg fmt="%s" index="2">53</arg>: Output port &lt;<arg fmt="%s" index="3">rdata2_EXE_MEM</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uut</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v</arg>&quot; line <arg fmt="%s" index="2">53</arg>: Output port &lt;<arg fmt="%s" index="3">dmemdata</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uut</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v</arg>&quot; line <arg fmt="%s" index="2">53</arg>: Output port &lt;<arg fmt="%s" index="3">waddr_MEM_WB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uut</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v</arg>&quot; line <arg fmt="%s" index="2">53</arg>: Output port &lt;<arg fmt="%s" index="3">aluout_MEM_WB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uut</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v</arg>&quot; line <arg fmt="%s" index="2">53</arg>: Output port &lt;<arg fmt="%s" index="3">wdata_WB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uut</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v</arg>&quot; line <arg fmt="%s" index="2">53</arg>: Output port &lt;<arg fmt="%s" index="3">alusrc_ID_EXE</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uut</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v</arg>&quot; line <arg fmt="%s" index="2">53</arg>: Output port &lt;<arg fmt="%s" index="3">branch_ID_EXE</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uut</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">fileid</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+</messages>
+

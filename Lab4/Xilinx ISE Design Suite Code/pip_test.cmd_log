@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/wilso/Downloads/Lab/lab4/pip_test.xst" -ofn "C:/Users/wilso/Downloads/Lab/lab4/pip_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-csg225-3 pip_test.ngc pip_test.ngd  
+xst -intstyle ise -ifn "C:/Users/wilso/Downloads/Lab/lab4/pip_test.xst" -ofn "C:/Users/wilso/Downloads/Lab/lab4/pip_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-csg225-3 pip_test.ngc pip_test.ngd  
+xst -intstyle ise -ifn "C:/Users/wilso/Downloads/Lab/lab4/pip_test.xst" -ofn "C:/Users/wilso/Downloads/Lab/lab4/pip_test.syr" 
+xst -intstyle ise -ifn "C:/Users/wilso/Downloads/Lab/lab4/pip_test.xst" -ofn "C:/Users/wilso/Downloads/Lab/lab4/pip_test.syr" 
+xst -intstyle ise -ifn "C:/Users/wilso/Downloads/CZ3001_Lab4_U1820540H/lab4/pip_test.xst" -ofn "C:/Users/wilso/Downloads/CZ3001_Lab4_U1820540H/lab4/pip_test.syr" 

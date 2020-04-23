@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/wilso/Downloads/Lab/lab4/pip_test_isim_beh.exe" -prj "C:/Users/wilso/Downloads/Lab/lab4/pip_test_beh.prj" "work.pip_test" "work.glbl" 

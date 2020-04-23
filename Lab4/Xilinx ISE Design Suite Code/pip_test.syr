@@ -1,0 +1,1718 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Reading design: pip_test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "pip_test.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "pip_test"
+Output Format                      : NGC
+Target Device                      : xc6slx4-3-csg225
+
+---- Source Options
+Top Module Name                    : pip_test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : No
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\regfile.v" into library work
+Parsing verilog file "define.v" included at line 2.
+Parsing module <regfile>.
+Analyzing Verilog file "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\PC.v" into library work
+Parsing verilog file "define.v" included at line 1.
+Parsing module <PC1>.
+Analyzing Verilog file "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\MEM_WBstage.v" into library work
+Parsing verilog file "define.v" included at line 1.
+Parsing module <MEM_WB_stage>.
+Analyzing Verilog file "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\memory.v" into library work
+Parsing verilog file "define.v" included at line 1.
+Parsing module <memory>.
+Analyzing Verilog file "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\ID_EXEstage.v" into library work
+Parsing verilog file "define.v" included at line 1.
+Parsing module <ID_EXE_stage>.
+Analyzing Verilog file "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\EXE_MEMstage.v" into library work
+Parsing verilog file "define.v" included at line 1.
+Parsing module <EXE_MEM_stage>.
+Analyzing Verilog file "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\control.v" into library work
+Parsing verilog file "define.v" included at line 3.
+Parsing module <control>.
+Analyzing Verilog file "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\alu.v" into library work
+Parsing verilog file "define.v" included at line 1.
+Parsing module <alu>.
+Analyzing Verilog file "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pipelined_regfile_5stage.v" into library work
+Parsing verilog file "define.v" included at line 2.
+Parsing module <pipelined_regfile_5stage>.
+Analyzing Verilog file "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" into library work
+Parsing module <pip_test>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 53: Port npc_ID_EXE is not connected to this instance
+
+Elaborating module <pip_test>.
+WARNING:HDLCompiler:872 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 79: Using initial value of rst since it is never assigned
+
+Elaborating module <pipelined_regfile_5stage>.
+
+Elaborating module <PC1>.
+
+Elaborating module <memory>.
+"C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\memory.v" Line 34. $write Opening Fileid 0\n
+WARNING:HDLCompiler:816 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\memory.v" Line 36: System function call feof not supported
+WARNING:HDLCompiler:817 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\memory.v" Line 49: System task fclose ignored for synthesis
+
+Elaborating module <control>.
+
+Elaborating module <regfile>.
+
+Elaborating module <ID_EXE_stage>.
+
+Elaborating module <alu>.
+
+Elaborating module <EXE_MEM_stage>.
+
+Elaborating module <MEM_WB_stage>.
+WARNING:HDLCompiler:1127 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 56: Assignment to PCOUT ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 57: Assignment to INST ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 58: Assignment to rdata1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 59: Assignment to rdata2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 60: Assignment to rdata1_ID_EXE ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 61: Assignment to rdata2_ID_EXE ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 62: Assignment to imm_ID_EXE ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 63: Assignment to rdata2_imm_ID_EXE ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 64: Assignment to aluop_ID_EXE ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 65: Assignment to alusrc_ID_EXE ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 66: Assignment to waddr_ID_EXE ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 67: Assignment to aluout ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 68: Assignment to waddr_EXE_MEM ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 69: Assignment to aluout_EXE_MEM ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 70: Assignment to rdata2_EXE_MEM ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 71: Assignment to dmemdata ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 72: Assignment to waddr_MEM_WB ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 73: Assignment to aluout_MEM_WB ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" Line 74: Assignment to wdata_WB ignored, since the identifier is never used
+WARNING:Xst:2972 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" line 53. All outputs of instance <uut> of block <pipelined_regfile_5stage> are unconnected in block <pip_test>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <pip_test>.
+    Related source file is "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v".
+INFO:Xst:3210 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" line 53: Output port <PCOUT> of the instance <uut> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" line 53: Output port <INST> of the instance <uut> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" line 53: Output port <rdata1> of the instance <uut> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" line 53: Output port <rdata2> of the instance <uut> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" line 53: Output port <rdata1_ID_EXE> of the instance <uut> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" line 53: Output port <rdata2_ID_EXE> of the instance <uut> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" line 53: Output port <npc_ID_EXE> of the instance <uut> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" line 53: Output port <imm_ID_EXE> of the instance <uut> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" line 53: Output port <rdata2_imm_ID_EXE> of the instance <uut> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" line 53: Output port <aluop_ID_EXE> of the instance <uut> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" line 53: Output port <waddr_ID_EXE> of the instance <uut> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" line 53: Output port <aluout> of the instance <uut> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" line 53: Output port <waddr_EXE_MEM> of the instance <uut> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" line 53: Output port <aluout_EXE_MEM> of the instance <uut> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" line 53: Output port <rdata2_EXE_MEM> of the instance <uut> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" line 53: Output port <dmemdata> of the instance <uut> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" line 53: Output port <waddr_MEM_WB> of the instance <uut> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" line 53: Output port <aluout_MEM_WB> of the instance <uut> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" line 53: Output port <wdata_WB> of the instance <uut> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" line 53: Output port <alusrc_ID_EXE> of the instance <uut> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\pip5_data_test.v" line 53: Output port <branch_ID_EXE> of the instance <uut> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <pip_test> synthesized.
+
+Synthesizing Unit <PC1>.
+    Related source file is "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\PC.v".
+    Found 1-bit register for signal <currPC<31>>.
+    Found 1-bit register for signal <currPC<30>>.
+    Found 1-bit register for signal <currPC<29>>.
+    Found 1-bit register for signal <currPC<28>>.
+    Found 1-bit register for signal <currPC<27>>.
+    Found 1-bit register for signal <currPC<26>>.
+    Found 1-bit register for signal <currPC<25>>.
+    Found 1-bit register for signal <currPC<24>>.
+    Found 1-bit register for signal <currPC<23>>.
+    Found 1-bit register for signal <currPC<22>>.
+    Found 1-bit register for signal <currPC<21>>.
+    Found 1-bit register for signal <currPC<20>>.
+    Found 1-bit register for signal <currPC<19>>.
+    Found 1-bit register for signal <currPC<18>>.
+    Found 1-bit register for signal <currPC<17>>.
+    Found 1-bit register for signal <currPC<16>>.
+    Found 1-bit register for signal <currPC<15>>.
+    Found 1-bit register for signal <currPC<14>>.
+    Found 1-bit register for signal <currPC<13>>.
+    Found 1-bit register for signal <currPC<12>>.
+    Found 1-bit register for signal <currPC<11>>.
+    Found 1-bit register for signal <currPC<10>>.
+    Found 1-bit register for signal <currPC<9>>.
+    Found 1-bit register for signal <currPC<8>>.
+    Found 1-bit register for signal <currPC<7>>.
+    Found 1-bit register for signal <currPC<6>>.
+    Found 1-bit register for signal <currPC<5>>.
+    Found 1-bit register for signal <currPC<4>>.
+    Found 1-bit register for signal <currPC<3>>.
+    Found 1-bit register for signal <currPC<2>>.
+    Found 1-bit register for signal <currPC<1>>.
+    Found 1-bit register for signal <currPC<0>>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <PC1> synthesized.
+
+Synthesizing Unit <memory>.
+    Related source file is "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\memory.v".
+WARNING:Xst:647 - Input <fileid> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1024x32-bit dual-port RAM <Mram_memory> for signal <memory>.
+    Found 1-bit register for signal <addr_r<9>>.
+    Found 1-bit register for signal <addr_r<8>>.
+    Found 1-bit register for signal <addr_r<7>>.
+    Found 1-bit register for signal <addr_r<6>>.
+    Found 1-bit register for signal <addr_r<5>>.
+    Found 1-bit register for signal <addr_r<4>>.
+    Found 1-bit register for signal <addr_r<3>>.
+    Found 1-bit register for signal <addr_r<2>>.
+    Found 1-bit register for signal <addr_r<1>>.
+    Found 1-bit register for signal <addr_r<0>>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  10 D-type flip-flop(s).
+Unit <memory> synthesized.
+
+Synthesizing Unit <control>.
+    Related source file is "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\control.v".
+    Summary:
+	no macro.
+Unit <control> synthesized.
+
+Synthesizing Unit <regfile>.
+    Related source file is "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\regfile.v".
+    Found 1-bit register for signal <regdata_31<1023>>.
+    Found 1-bit register for signal <regdata_31<1022>>.
+    Found 1-bit register for signal <regdata_31<1021>>.
+    Found 1-bit register for signal <regdata_31<1020>>.
+    Found 1-bit register for signal <regdata_31<1019>>.
+    Found 1-bit register for signal <regdata_31<1018>>.
+    Found 1-bit register for signal <regdata_31<1017>>.
+    Found 1-bit register for signal <regdata_31<1016>>.
+    Found 1-bit register for signal <regdata_31<1015>>.
+    Found 1-bit register for signal <regdata_31<1014>>.
+    Found 1-bit register for signal <regdata_31<1013>>.
+    Found 1-bit register for signal <regdata_31<1012>>.
+    Found 1-bit register for signal <regdata_31<1011>>.
+    Found 1-bit register for signal <regdata_31<1010>>.
+    Found 1-bit register for signal <regdata_31<1009>>.
+    Found 1-bit register for signal <regdata_31<1008>>.
+    Found 1-bit register for signal <regdata_31<1007>>.
+    Found 1-bit register for signal <regdata_31<1006>>.
+    Found 1-bit register for signal <regdata_31<1005>>.
+    Found 1-bit register for signal <regdata_31<1004>>.
+    Found 1-bit register for signal <regdata_31<1003>>.
+    Found 1-bit register for signal <regdata_31<1002>>.
+    Found 1-bit register for signal <regdata_31<1001>>.
+    Found 1-bit register for signal <regdata_31<1000>>.
+    Found 1-bit register for signal <regdata_31<999>>.
+    Found 1-bit register for signal <regdata_31<998>>.
+    Found 1-bit register for signal <regdata_31<997>>.
+    Found 1-bit register for signal <regdata_31<996>>.
+    Found 1-bit register for signal <regdata_31<995>>.
+    Found 1-bit register for signal <regdata_31<994>>.
+    Found 1-bit register for signal <regdata_31<993>>.
+    Found 1-bit register for signal <regdata_31<992>>.
+    Found 1-bit register for signal <regdata_31<991>>.
+    Found 1-bit register for signal <regdata_31<990>>.
+    Found 1-bit register for signal <regdata_31<989>>.
+    Found 1-bit register for signal <regdata_31<988>>.
+    Found 1-bit register for signal <regdata_31<987>>.
+    Found 1-bit register for signal <regdata_31<986>>.
+    Found 1-bit register for signal <regdata_31<985>>.
+    Found 1-bit register for signal <regdata_31<984>>.
+    Found 1-bit register for signal <regdata_31<983>>.
+    Found 1-bit register for signal <regdata_31<982>>.
+    Found 1-bit register for signal <regdata_31<981>>.
+    Found 1-bit register for signal <regdata_31<980>>.
+    Found 1-bit register for signal <regdata_31<979>>.
+    Found 1-bit register for signal <regdata_31<978>>.
+    Found 1-bit register for signal <regdata_31<977>>.
+    Found 1-bit register for signal <regdata_31<976>>.
+    Found 1-bit register for signal <regdata_31<975>>.
+    Found 1-bit register for signal <regdata_31<974>>.
+    Found 1-bit register for signal <regdata_31<973>>.
+    Found 1-bit register for signal <regdata_31<972>>.
+    Found 1-bit register for signal <regdata_31<971>>.
+    Found 1-bit register for signal <regdata_31<970>>.
+    Found 1-bit register for signal <regdata_31<969>>.
+    Found 1-bit register for signal <regdata_31<968>>.
+    Found 1-bit register for signal <regdata_31<967>>.
+    Found 1-bit register for signal <regdata_31<966>>.
+    Found 1-bit register for signal <regdata_31<965>>.
+    Found 1-bit register for signal <regdata_31<964>>.
+    Found 1-bit register for signal <regdata_31<963>>.
+    Found 1-bit register for signal <regdata_31<962>>.
+    Found 1-bit register for signal <regdata_31<961>>.
+    Found 1-bit register for signal <regdata_31<960>>.
+    Found 1-bit register for signal <regdata_31<959>>.
+    Found 1-bit register for signal <regdata_31<958>>.
+    Found 1-bit register for signal <regdata_31<957>>.
+    Found 1-bit register for signal <regdata_31<956>>.
+    Found 1-bit register for signal <regdata_31<955>>.
+    Found 1-bit register for signal <regdata_31<954>>.
+    Found 1-bit register for signal <regdata_31<953>>.
+    Found 1-bit register for signal <regdata_31<952>>.
+    Found 1-bit register for signal <regdata_31<951>>.
+    Found 1-bit register for signal <regdata_31<950>>.
+    Found 1-bit register for signal <regdata_31<949>>.
+    Found 1-bit register for signal <regdata_31<948>>.
+    Found 1-bit register for signal <regdata_31<947>>.
+    Found 1-bit register for signal <regdata_31<946>>.
+    Found 1-bit register for signal <regdata_31<945>>.
+    Found 1-bit register for signal <regdata_31<944>>.
+    Found 1-bit register for signal <regdata_31<943>>.
+    Found 1-bit register for signal <regdata_31<942>>.
+    Found 1-bit register for signal <regdata_31<941>>.
+    Found 1-bit register for signal <regdata_31<940>>.
+    Found 1-bit register for signal <regdata_31<939>>.
+    Found 1-bit register for signal <regdata_31<938>>.
+    Found 1-bit register for signal <regdata_31<937>>.
+    Found 1-bit register for signal <regdata_31<936>>.
+    Found 1-bit register for signal <regdata_31<935>>.
+    Found 1-bit register for signal <regdata_31<934>>.
+    Found 1-bit register for signal <regdata_31<933>>.
+    Found 1-bit register for signal <regdata_31<932>>.
+    Found 1-bit register for signal <regdata_31<931>>.
+    Found 1-bit register for signal <regdata_31<930>>.
+    Found 1-bit register for signal <regdata_31<929>>.
+    Found 1-bit register for signal <regdata_31<928>>.
+    Found 1-bit register for signal <regdata_31<927>>.
+    Found 1-bit register for signal <regdata_31<926>>.
+    Found 1-bit register for signal <regdata_31<925>>.
+    Found 1-bit register for signal <regdata_31<924>>.
+    Found 1-bit register for signal <regdata_31<923>>.
+    Found 1-bit register for signal <regdata_31<922>>.
+    Found 1-bit register for signal <regdata_31<921>>.
+    Found 1-bit register for signal <regdata_31<920>>.
+    Found 1-bit register for signal <regdata_31<919>>.
+    Found 1-bit register for signal <regdata_31<918>>.
+    Found 1-bit register for signal <regdata_31<917>>.
+    Found 1-bit register for signal <regdata_31<916>>.
+    Found 1-bit register for signal <regdata_31<915>>.
+    Found 1-bit register for signal <regdata_31<914>>.
+    Found 1-bit register for signal <regdata_31<913>>.
+    Found 1-bit register for signal <regdata_31<912>>.
+    Found 1-bit register for signal <regdata_31<911>>.
+    Found 1-bit register for signal <regdata_31<910>>.
+    Found 1-bit register for signal <regdata_31<909>>.
+    Found 1-bit register for signal <regdata_31<908>>.
+    Found 1-bit register for signal <regdata_31<907>>.
+    Found 1-bit register for signal <regdata_31<906>>.
+    Found 1-bit register for signal <regdata_31<905>>.
+    Found 1-bit register for signal <regdata_31<904>>.
+    Found 1-bit register for signal <regdata_31<903>>.
+    Found 1-bit register for signal <regdata_31<902>>.
+    Found 1-bit register for signal <regdata_31<901>>.
+    Found 1-bit register for signal <regdata_31<900>>.
+    Found 1-bit register for signal <regdata_31<899>>.
+    Found 1-bit register for signal <regdata_31<898>>.
+    Found 1-bit register for signal <regdata_31<897>>.
+    Found 1-bit register for signal <regdata_31<896>>.
+    Found 1-bit register for signal <regdata_31<895>>.
+    Found 1-bit register for signal <regdata_31<894>>.
+    Found 1-bit register for signal <regdata_31<893>>.
+    Found 1-bit register for signal <regdata_31<892>>.
+    Found 1-bit register for signal <regdata_31<891>>.
+    Found 1-bit register for signal <regdata_31<890>>.
+    Found 1-bit register for signal <regdata_31<889>>.
+    Found 1-bit register for signal <regdata_31<888>>.
+    Found 1-bit register for signal <regdata_31<887>>.
+    Found 1-bit register for signal <regdata_31<886>>.
+    Found 1-bit register for signal <regdata_31<885>>.
+    Found 1-bit register for signal <regdata_31<884>>.
+    Found 1-bit register for signal <regdata_31<883>>.
+    Found 1-bit register for signal <regdata_31<882>>.
+    Found 1-bit register for signal <regdata_31<881>>.
+    Found 1-bit register for signal <regdata_31<880>>.
+    Found 1-bit register for signal <regdata_31<879>>.
+    Found 1-bit register for signal <regdata_31<878>>.
+    Found 1-bit register for signal <regdata_31<877>>.
+    Found 1-bit register for signal <regdata_31<876>>.
+    Found 1-bit register for signal <regdata_31<875>>.
+    Found 1-bit register for signal <regdata_31<874>>.
+    Found 1-bit register for signal <regdata_31<873>>.
+    Found 1-bit register for signal <regdata_31<872>>.
+    Found 1-bit register for signal <regdata_31<871>>.
+    Found 1-bit register for signal <regdata_31<870>>.
+    Found 1-bit register for signal <regdata_31<869>>.
+    Found 1-bit register for signal <regdata_31<868>>.
+    Found 1-bit register for signal <regdata_31<867>>.
+    Found 1-bit register for signal <regdata_31<866>>.
+    Found 1-bit register for signal <regdata_31<865>>.
+    Found 1-bit register for signal <regdata_31<864>>.
+    Found 1-bit register for signal <regdata_31<863>>.
+    Found 1-bit register for signal <regdata_31<862>>.
+    Found 1-bit register for signal <regdata_31<861>>.
+    Found 1-bit register for signal <regdata_31<860>>.
+    Found 1-bit register for signal <regdata_31<859>>.
+    Found 1-bit register for signal <regdata_31<858>>.
+    Found 1-bit register for signal <regdata_31<857>>.
+    Found 1-bit register for signal <regdata_31<856>>.
+    Found 1-bit register for signal <regdata_31<855>>.
+    Found 1-bit register for signal <regdata_31<854>>.
+    Found 1-bit register for signal <regdata_31<853>>.
+    Found 1-bit register for signal <regdata_31<852>>.
+    Found 1-bit register for signal <regdata_31<851>>.
+    Found 1-bit register for signal <regdata_31<850>>.
+    Found 1-bit register for signal <regdata_31<849>>.
+    Found 1-bit register for signal <regdata_31<848>>.
+    Found 1-bit register for signal <regdata_31<847>>.
+    Found 1-bit register for signal <regdata_31<846>>.
+    Found 1-bit register for signal <regdata_31<845>>.
+    Found 1-bit register for signal <regdata_31<844>>.
+    Found 1-bit register for signal <regdata_31<843>>.
+    Found 1-bit register for signal <regdata_31<842>>.
+    Found 1-bit register for signal <regdata_31<841>>.
+    Found 1-bit register for signal <regdata_31<840>>.
+    Found 1-bit register for signal <regdata_31<839>>.
+    Found 1-bit register for signal <regdata_31<838>>.
+    Found 1-bit register for signal <regdata_31<837>>.
+    Found 1-bit register for signal <regdata_31<836>>.
+    Found 1-bit register for signal <regdata_31<835>>.
+    Found 1-bit register for signal <regdata_31<834>>.
+    Found 1-bit register for signal <regdata_31<833>>.
+    Found 1-bit register for signal <regdata_31<832>>.
+    Found 1-bit register for signal <regdata_31<831>>.
+    Found 1-bit register for signal <regdata_31<830>>.
+    Found 1-bit register for signal <regdata_31<829>>.
+    Found 1-bit register for signal <regdata_31<828>>.
+    Found 1-bit register for signal <regdata_31<827>>.
+    Found 1-bit register for signal <regdata_31<826>>.
+    Found 1-bit register for signal <regdata_31<825>>.
+    Found 1-bit register for signal <regdata_31<824>>.
+    Found 1-bit register for signal <regdata_31<823>>.
+    Found 1-bit register for signal <regdata_31<822>>.
+    Found 1-bit register for signal <regdata_31<821>>.
+    Found 1-bit register for signal <regdata_31<820>>.
+    Found 1-bit register for signal <regdata_31<819>>.
+    Found 1-bit register for signal <regdata_31<818>>.
+    Found 1-bit register for signal <regdata_31<817>>.
+    Found 1-bit register for signal <regdata_31<816>>.
+    Found 1-bit register for signal <regdata_31<815>>.
+    Found 1-bit register for signal <regdata_31<814>>.
+    Found 1-bit register for signal <regdata_31<813>>.
+    Found 1-bit register for signal <regdata_31<812>>.
+    Found 1-bit register for signal <regdata_31<811>>.
+    Found 1-bit register for signal <regdata_31<810>>.
+    Found 1-bit register for signal <regdata_31<809>>.
+    Found 1-bit register for signal <regdata_31<808>>.
+    Found 1-bit register for signal <regdata_31<807>>.
+    Found 1-bit register for signal <regdata_31<806>>.
+    Found 1-bit register for signal <regdata_31<805>>.
+    Found 1-bit register for signal <regdata_31<804>>.
+    Found 1-bit register for signal <regdata_31<803>>.
+    Found 1-bit register for signal <regdata_31<802>>.
+    Found 1-bit register for signal <regdata_31<801>>.
+    Found 1-bit register for signal <regdata_31<800>>.
+    Found 1-bit register for signal <regdata_31<799>>.
+    Found 1-bit register for signal <regdata_31<798>>.
+    Found 1-bit register for signal <regdata_31<797>>.
+    Found 1-bit register for signal <regdata_31<796>>.
+    Found 1-bit register for signal <regdata_31<795>>.
+    Found 1-bit register for signal <regdata_31<794>>.
+    Found 1-bit register for signal <regdata_31<793>>.
+    Found 1-bit register for signal <regdata_31<792>>.
+    Found 1-bit register for signal <regdata_31<791>>.
+    Found 1-bit register for signal <regdata_31<790>>.
+    Found 1-bit register for signal <regdata_31<789>>.
+    Found 1-bit register for signal <regdata_31<788>>.
+    Found 1-bit register for signal <regdata_31<787>>.
+    Found 1-bit register for signal <regdata_31<786>>.
+    Found 1-bit register for signal <regdata_31<785>>.
+    Found 1-bit register for signal <regdata_31<784>>.
+    Found 1-bit register for signal <regdata_31<783>>.
+    Found 1-bit register for signal <regdata_31<782>>.
+    Found 1-bit register for signal <regdata_31<781>>.
+    Found 1-bit register for signal <regdata_31<780>>.
+    Found 1-bit register for signal <regdata_31<779>>.
+    Found 1-bit register for signal <regdata_31<778>>.
+    Found 1-bit register for signal <regdata_31<777>>.
+    Found 1-bit register for signal <regdata_31<776>>.
+    Found 1-bit register for signal <regdata_31<775>>.
+    Found 1-bit register for signal <regdata_31<774>>.
+    Found 1-bit register for signal <regdata_31<773>>.
+    Found 1-bit register for signal <regdata_31<772>>.
+    Found 1-bit register for signal <regdata_31<771>>.
+    Found 1-bit register for signal <regdata_31<770>>.
+    Found 1-bit register for signal <regdata_31<769>>.
+    Found 1-bit register for signal <regdata_31<768>>.
+    Found 1-bit register for signal <regdata_31<767>>.
+    Found 1-bit register for signal <regdata_31<766>>.
+    Found 1-bit register for signal <regdata_31<765>>.
+    Found 1-bit register for signal <regdata_31<764>>.
+    Found 1-bit register for signal <regdata_31<763>>.
+    Found 1-bit register for signal <regdata_31<762>>.
+    Found 1-bit register for signal <regdata_31<761>>.
+    Found 1-bit register for signal <regdata_31<760>>.
+    Found 1-bit register for signal <regdata_31<759>>.
+    Found 1-bit register for signal <regdata_31<758>>.
+    Found 1-bit register for signal <regdata_31<757>>.
+    Found 1-bit register for signal <regdata_31<756>>.
+    Found 1-bit register for signal <regdata_31<755>>.
+    Found 1-bit register for signal <regdata_31<754>>.
+    Found 1-bit register for signal <regdata_31<753>>.
+    Found 1-bit register for signal <regdata_31<752>>.
+    Found 1-bit register for signal <regdata_31<751>>.
+    Found 1-bit register for signal <regdata_31<750>>.
+    Found 1-bit register for signal <regdata_31<749>>.
+    Found 1-bit register for signal <regdata_31<748>>.
+    Found 1-bit register for signal <regdata_31<747>>.
+    Found 1-bit register for signal <regdata_31<746>>.
+    Found 1-bit register for signal <regdata_31<745>>.
+    Found 1-bit register for signal <regdata_31<744>>.
+    Found 1-bit register for signal <regdata_31<743>>.
+    Found 1-bit register for signal <regdata_31<742>>.
+    Found 1-bit register for signal <regdata_31<741>>.
+    Found 1-bit register for signal <regdata_31<740>>.
+    Found 1-bit register for signal <regdata_31<739>>.
+    Found 1-bit register for signal <regdata_31<738>>.
+    Found 1-bit register for signal <regdata_31<737>>.
+    Found 1-bit register for signal <regdata_31<736>>.
+    Found 1-bit register for signal <regdata_31<735>>.
+    Found 1-bit register for signal <regdata_31<734>>.
+    Found 1-bit register for signal <regdata_31<733>>.
+    Found 1-bit register for signal <regdata_31<732>>.
+    Found 1-bit register for signal <regdata_31<731>>.
+    Found 1-bit register for signal <regdata_31<730>>.
+    Found 1-bit register for signal <regdata_31<729>>.
+    Found 1-bit register for signal <regdata_31<728>>.
+    Found 1-bit register for signal <regdata_31<727>>.
+    Found 1-bit register for signal <regdata_31<726>>.
+    Found 1-bit register for signal <regdata_31<725>>.
+    Found 1-bit register for signal <regdata_31<724>>.
+    Found 1-bit register for signal <regdata_31<723>>.
+    Found 1-bit register for signal <regdata_31<722>>.
+    Found 1-bit register for signal <regdata_31<721>>.
+    Found 1-bit register for signal <regdata_31<720>>.
+    Found 1-bit register for signal <regdata_31<719>>.
+    Found 1-bit register for signal <regdata_31<718>>.
+    Found 1-bit register for signal <regdata_31<717>>.
+    Found 1-bit register for signal <regdata_31<716>>.
+    Found 1-bit register for signal <regdata_31<715>>.
+    Found 1-bit register for signal <regdata_31<714>>.
+    Found 1-bit register for signal <regdata_31<713>>.
+    Found 1-bit register for signal <regdata_31<712>>.
+    Found 1-bit register for signal <regdata_31<711>>.
+    Found 1-bit register for signal <regdata_31<710>>.
+    Found 1-bit register for signal <regdata_31<709>>.
+    Found 1-bit register for signal <regdata_31<708>>.
+    Found 1-bit register for signal <regdata_31<707>>.
+    Found 1-bit register for signal <regdata_31<706>>.
+    Found 1-bit register for signal <regdata_31<705>>.
+    Found 1-bit register for signal <regdata_31<704>>.
+    Found 1-bit register for signal <regdata_31<703>>.
+    Found 1-bit register for signal <regdata_31<702>>.
+    Found 1-bit register for signal <regdata_31<701>>.
+    Found 1-bit register for signal <regdata_31<700>>.
+    Found 1-bit register for signal <regdata_31<699>>.
+    Found 1-bit register for signal <regdata_31<698>>.
+    Found 1-bit register for signal <regdata_31<697>>.
+    Found 1-bit register for signal <regdata_31<696>>.
+    Found 1-bit register for signal <regdata_31<695>>.
+    Found 1-bit register for signal <regdata_31<694>>.
+    Found 1-bit register for signal <regdata_31<693>>.
+    Found 1-bit register for signal <regdata_31<692>>.
+    Found 1-bit register for signal <regdata_31<691>>.
+    Found 1-bit register for signal <regdata_31<690>>.
+    Found 1-bit register for signal <regdata_31<689>>.
+    Found 1-bit register for signal <regdata_31<688>>.
+    Found 1-bit register for signal <regdata_31<687>>.
+    Found 1-bit register for signal <regdata_31<686>>.
+    Found 1-bit register for signal <regdata_31<685>>.
+    Found 1-bit register for signal <regdata_31<684>>.
+    Found 1-bit register for signal <regdata_31<683>>.
+    Found 1-bit register for signal <regdata_31<682>>.
+    Found 1-bit register for signal <regdata_31<681>>.
+    Found 1-bit register for signal <regdata_31<680>>.
+    Found 1-bit register for signal <regdata_31<679>>.
+    Found 1-bit register for signal <regdata_31<678>>.
+    Found 1-bit register for signal <regdata_31<677>>.
+    Found 1-bit register for signal <regdata_31<676>>.
+    Found 1-bit register for signal <regdata_31<675>>.
+    Found 1-bit register for signal <regdata_31<674>>.
+    Found 1-bit register for signal <regdata_31<673>>.
+    Found 1-bit register for signal <regdata_31<672>>.
+    Found 1-bit register for signal <regdata_31<671>>.
+    Found 1-bit register for signal <regdata_31<670>>.
+    Found 1-bit register for signal <regdata_31<669>>.
+    Found 1-bit register for signal <regdata_31<668>>.
+    Found 1-bit register for signal <regdata_31<667>>.
+    Found 1-bit register for signal <regdata_31<666>>.
+    Found 1-bit register for signal <regdata_31<665>>.
+    Found 1-bit register for signal <regdata_31<664>>.
+    Found 1-bit register for signal <regdata_31<663>>.
+    Found 1-bit register for signal <regdata_31<662>>.
+    Found 1-bit register for signal <regdata_31<661>>.
+    Found 1-bit register for signal <regdata_31<660>>.
+    Found 1-bit register for signal <regdata_31<659>>.
+    Found 1-bit register for signal <regdata_31<658>>.
+    Found 1-bit register for signal <regdata_31<657>>.
+    Found 1-bit register for signal <regdata_31<656>>.
+    Found 1-bit register for signal <regdata_31<655>>.
+    Found 1-bit register for signal <regdata_31<654>>.
+    Found 1-bit register for signal <regdata_31<653>>.
+    Found 1-bit register for signal <regdata_31<652>>.
+    Found 1-bit register for signal <regdata_31<651>>.
+    Found 1-bit register for signal <regdata_31<650>>.
+    Found 1-bit register for signal <regdata_31<649>>.
+    Found 1-bit register for signal <regdata_31<648>>.
+    Found 1-bit register for signal <regdata_31<647>>.
+    Found 1-bit register for signal <regdata_31<646>>.
+    Found 1-bit register for signal <regdata_31<645>>.
+    Found 1-bit register for signal <regdata_31<644>>.
+    Found 1-bit register for signal <regdata_31<643>>.
+    Found 1-bit register for signal <regdata_31<642>>.
+    Found 1-bit register for signal <regdata_31<641>>.
+    Found 1-bit register for signal <regdata_31<640>>.
+    Found 1-bit register for signal <regdata_31<639>>.
+    Found 1-bit register for signal <regdata_31<638>>.
+    Found 1-bit register for signal <regdata_31<637>>.
+    Found 1-bit register for signal <regdata_31<636>>.
+    Found 1-bit register for signal <regdata_31<635>>.
+    Found 1-bit register for signal <regdata_31<634>>.
+    Found 1-bit register for signal <regdata_31<633>>.
+    Found 1-bit register for signal <regdata_31<632>>.
+    Found 1-bit register for signal <regdata_31<631>>.
+    Found 1-bit register for signal <regdata_31<630>>.
+    Found 1-bit register for signal <regdata_31<629>>.
+    Found 1-bit register for signal <regdata_31<628>>.
+    Found 1-bit register for signal <regdata_31<627>>.
+    Found 1-bit register for signal <regdata_31<626>>.
+    Found 1-bit register for signal <regdata_31<625>>.
+    Found 1-bit register for signal <regdata_31<624>>.
+    Found 1-bit register for signal <regdata_31<623>>.
+    Found 1-bit register for signal <regdata_31<622>>.
+    Found 1-bit register for signal <regdata_31<621>>.
+    Found 1-bit register for signal <regdata_31<620>>.
+    Found 1-bit register for signal <regdata_31<619>>.
+    Found 1-bit register for signal <regdata_31<618>>.
+    Found 1-bit register for signal <regdata_31<617>>.
+    Found 1-bit register for signal <regdata_31<616>>.
+    Found 1-bit register for signal <regdata_31<615>>.
+    Found 1-bit register for signal <regdata_31<614>>.
+    Found 1-bit register for signal <regdata_31<613>>.
+    Found 1-bit register for signal <regdata_31<612>>.
+    Found 1-bit register for signal <regdata_31<611>>.
+    Found 1-bit register for signal <regdata_31<610>>.
+    Found 1-bit register for signal <regdata_31<609>>.
+    Found 1-bit register for signal <regdata_31<608>>.
+    Found 1-bit register for signal <regdata_31<607>>.
+    Found 1-bit register for signal <regdata_31<606>>.
+    Found 1-bit register for signal <regdata_31<605>>.
+    Found 1-bit register for signal <regdata_31<604>>.
+    Found 1-bit register for signal <regdata_31<603>>.
+    Found 1-bit register for signal <regdata_31<602>>.
+    Found 1-bit register for signal <regdata_31<601>>.
+    Found 1-bit register for signal <regdata_31<600>>.
+    Found 1-bit register for signal <regdata_31<599>>.
+    Found 1-bit register for signal <regdata_31<598>>.
+    Found 1-bit register for signal <regdata_31<597>>.
+    Found 1-bit register for signal <regdata_31<596>>.
+    Found 1-bit register for signal <regdata_31<595>>.
+    Found 1-bit register for signal <regdata_31<594>>.
+    Found 1-bit register for signal <regdata_31<593>>.
+    Found 1-bit register for signal <regdata_31<592>>.
+    Found 1-bit register for signal <regdata_31<591>>.
+    Found 1-bit register for signal <regdata_31<590>>.
+    Found 1-bit register for signal <regdata_31<589>>.
+    Found 1-bit register for signal <regdata_31<588>>.
+    Found 1-bit register for signal <regdata_31<587>>.
+    Found 1-bit register for signal <regdata_31<586>>.
+    Found 1-bit register for signal <regdata_31<585>>.
+    Found 1-bit register for signal <regdata_31<584>>.
+    Found 1-bit register for signal <regdata_31<583>>.
+    Found 1-bit register for signal <regdata_31<582>>.
+    Found 1-bit register for signal <regdata_31<581>>.
+    Found 1-bit register for signal <regdata_31<580>>.
+    Found 1-bit register for signal <regdata_31<579>>.
+    Found 1-bit register for signal <regdata_31<578>>.
+    Found 1-bit register for signal <regdata_31<577>>.
+    Found 1-bit register for signal <regdata_31<576>>.
+    Found 1-bit register for signal <regdata_31<575>>.
+    Found 1-bit register for signal <regdata_31<574>>.
+    Found 1-bit register for signal <regdata_31<573>>.
+    Found 1-bit register for signal <regdata_31<572>>.
+    Found 1-bit register for signal <regdata_31<571>>.
+    Found 1-bit register for signal <regdata_31<570>>.
+    Found 1-bit register for signal <regdata_31<569>>.
+    Found 1-bit register for signal <regdata_31<568>>.
+    Found 1-bit register for signal <regdata_31<567>>.
+    Found 1-bit register for signal <regdata_31<566>>.
+    Found 1-bit register for signal <regdata_31<565>>.
+    Found 1-bit register for signal <regdata_31<564>>.
+    Found 1-bit register for signal <regdata_31<563>>.
+    Found 1-bit register for signal <regdata_31<562>>.
+    Found 1-bit register for signal <regdata_31<561>>.
+    Found 1-bit register for signal <regdata_31<560>>.
+    Found 1-bit register for signal <regdata_31<559>>.
+    Found 1-bit register for signal <regdata_31<558>>.
+    Found 1-bit register for signal <regdata_31<557>>.
+    Found 1-bit register for signal <regdata_31<556>>.
+    Found 1-bit register for signal <regdata_31<555>>.
+    Found 1-bit register for signal <regdata_31<554>>.
+    Found 1-bit register for signal <regdata_31<553>>.
+    Found 1-bit register for signal <regdata_31<552>>.
+    Found 1-bit register for signal <regdata_31<551>>.
+    Found 1-bit register for signal <regdata_31<550>>.
+    Found 1-bit register for signal <regdata_31<549>>.
+    Found 1-bit register for signal <regdata_31<548>>.
+    Found 1-bit register for signal <regdata_31<547>>.
+    Found 1-bit register for signal <regdata_31<546>>.
+    Found 1-bit register for signal <regdata_31<545>>.
+    Found 1-bit register for signal <regdata_31<544>>.
+    Found 1-bit register for signal <regdata_31<543>>.
+    Found 1-bit register for signal <regdata_31<542>>.
+    Found 1-bit register for signal <regdata_31<541>>.
+    Found 1-bit register for signal <regdata_31<540>>.
+    Found 1-bit register for signal <regdata_31<539>>.
+    Found 1-bit register for signal <regdata_31<538>>.
+    Found 1-bit register for signal <regdata_31<537>>.
+    Found 1-bit register for signal <regdata_31<536>>.
+    Found 1-bit register for signal <regdata_31<535>>.
+    Found 1-bit register for signal <regdata_31<534>>.
+    Found 1-bit register for signal <regdata_31<533>>.
+    Found 1-bit register for signal <regdata_31<532>>.
+    Found 1-bit register for signal <regdata_31<531>>.
+    Found 1-bit register for signal <regdata_31<530>>.
+    Found 1-bit register for signal <regdata_31<529>>.
+    Found 1-bit register for signal <regdata_31<528>>.
+    Found 1-bit register for signal <regdata_31<527>>.
+    Found 1-bit register for signal <regdata_31<526>>.
+    Found 1-bit register for signal <regdata_31<525>>.
+    Found 1-bit register for signal <regdata_31<524>>.
+    Found 1-bit register for signal <regdata_31<523>>.
+    Found 1-bit register for signal <regdata_31<522>>.
+    Found 1-bit register for signal <regdata_31<521>>.
+    Found 1-bit register for signal <regdata_31<520>>.
+    Found 1-bit register for signal <regdata_31<519>>.
+    Found 1-bit register for signal <regdata_31<518>>.
+    Found 1-bit register for signal <regdata_31<517>>.
+    Found 1-bit register for signal <regdata_31<516>>.
+    Found 1-bit register for signal <regdata_31<515>>.
+    Found 1-bit register for signal <regdata_31<514>>.
+    Found 1-bit register for signal <regdata_31<513>>.
+    Found 1-bit register for signal <regdata_31<512>>.
+    Found 1-bit register for signal <regdata_31<511>>.
+    Found 1-bit register for signal <regdata_31<510>>.
+    Found 1-bit register for signal <regdata_31<509>>.
+    Found 1-bit register for signal <regdata_31<508>>.
+    Found 1-bit register for signal <regdata_31<507>>.
+    Found 1-bit register for signal <regdata_31<506>>.
+    Found 1-bit register for signal <regdata_31<505>>.
+    Found 1-bit register for signal <regdata_31<504>>.
+    Found 1-bit register for signal <regdata_31<503>>.
+    Found 1-bit register for signal <regdata_31<502>>.
+    Found 1-bit register for signal <regdata_31<501>>.
+    Found 1-bit register for signal <regdata_31<500>>.
+    Found 1-bit register for signal <regdata_31<499>>.
+    Found 1-bit register for signal <regdata_31<498>>.
+    Found 1-bit register for signal <regdata_31<497>>.
+    Found 1-bit register for signal <regdata_31<496>>.
+    Found 1-bit register for signal <regdata_31<495>>.
+    Found 1-bit register for signal <regdata_31<494>>.
+    Found 1-bit register for signal <regdata_31<493>>.
+    Found 1-bit register for signal <regdata_31<492>>.
+    Found 1-bit register for signal <regdata_31<491>>.
+    Found 1-bit register for signal <regdata_31<490>>.
+    Found 1-bit register for signal <regdata_31<489>>.
+    Found 1-bit register for signal <regdata_31<488>>.
+    Found 1-bit register for signal <regdata_31<487>>.
+    Found 1-bit register for signal <regdata_31<486>>.
+    Found 1-bit register for signal <regdata_31<485>>.
+    Found 1-bit register for signal <regdata_31<484>>.
+    Found 1-bit register for signal <regdata_31<483>>.
+    Found 1-bit register for signal <regdata_31<482>>.
+    Found 1-bit register for signal <regdata_31<481>>.
+    Found 1-bit register for signal <regdata_31<480>>.
+    Found 1-bit register for signal <regdata_31<479>>.
+    Found 1-bit register for signal <regdata_31<478>>.
+    Found 1-bit register for signal <regdata_31<477>>.
+    Found 1-bit register for signal <regdata_31<476>>.
+    Found 1-bit register for signal <regdata_31<475>>.
+    Found 1-bit register for signal <regdata_31<474>>.
+    Found 1-bit register for signal <regdata_31<473>>.
+    Found 1-bit register for signal <regdata_31<472>>.
+    Found 1-bit register for signal <regdata_31<471>>.
+    Found 1-bit register for signal <regdata_31<470>>.
+    Found 1-bit register for signal <regdata_31<469>>.
+    Found 1-bit register for signal <regdata_31<468>>.
+    Found 1-bit register for signal <regdata_31<467>>.
+    Found 1-bit register for signal <regdata_31<466>>.
+    Found 1-bit register for signal <regdata_31<465>>.
+    Found 1-bit register for signal <regdata_31<464>>.
+    Found 1-bit register for signal <regdata_31<463>>.
+    Found 1-bit register for signal <regdata_31<462>>.
+    Found 1-bit register for signal <regdata_31<461>>.
+    Found 1-bit register for signal <regdata_31<460>>.
+    Found 1-bit register for signal <regdata_31<459>>.
+    Found 1-bit register for signal <regdata_31<458>>.
+    Found 1-bit register for signal <regdata_31<457>>.
+    Found 1-bit register for signal <regdata_31<456>>.
+    Found 1-bit register for signal <regdata_31<455>>.
+    Found 1-bit register for signal <regdata_31<454>>.
+    Found 1-bit register for signal <regdata_31<453>>.
+    Found 1-bit register for signal <regdata_31<452>>.
+    Found 1-bit register for signal <regdata_31<451>>.
+    Found 1-bit register for signal <regdata_31<450>>.
+    Found 1-bit register for signal <regdata_31<449>>.
+    Found 1-bit register for signal <regdata_31<448>>.
+    Found 1-bit register for signal <regdata_31<447>>.
+    Found 1-bit register for signal <regdata_31<446>>.
+    Found 1-bit register for signal <regdata_31<445>>.
+    Found 1-bit register for signal <regdata_31<444>>.
+    Found 1-bit register for signal <regdata_31<443>>.
+    Found 1-bit register for signal <regdata_31<442>>.
+    Found 1-bit register for signal <regdata_31<441>>.
+    Found 1-bit register for signal <regdata_31<440>>.
+    Found 1-bit register for signal <regdata_31<439>>.
+    Found 1-bit register for signal <regdata_31<438>>.
+    Found 1-bit register for signal <regdata_31<437>>.
+    Found 1-bit register for signal <regdata_31<436>>.
+    Found 1-bit register for signal <regdata_31<435>>.
+    Found 1-bit register for signal <regdata_31<434>>.
+    Found 1-bit register for signal <regdata_31<433>>.
+    Found 1-bit register for signal <regdata_31<432>>.
+    Found 1-bit register for signal <regdata_31<431>>.
+    Found 1-bit register for signal <regdata_31<430>>.
+    Found 1-bit register for signal <regdata_31<429>>.
+    Found 1-bit register for signal <regdata_31<428>>.
+    Found 1-bit register for signal <regdata_31<427>>.
+    Found 1-bit register for signal <regdata_31<426>>.
+    Found 1-bit register for signal <regdata_31<425>>.
+    Found 1-bit register for signal <regdata_31<424>>.
+    Found 1-bit register for signal <regdata_31<423>>.
+    Found 1-bit register for signal <regdata_31<422>>.
+    Found 1-bit register for signal <regdata_31<421>>.
+    Found 1-bit register for signal <regdata_31<420>>.
+    Found 1-bit register for signal <regdata_31<419>>.
+    Found 1-bit register for signal <regdata_31<418>>.
+    Found 1-bit register for signal <regdata_31<417>>.
+    Found 1-bit register for signal <regdata_31<416>>.
+    Found 1-bit register for signal <regdata_31<415>>.
+    Found 1-bit register for signal <regdata_31<414>>.
+    Found 1-bit register for signal <regdata_31<413>>.
+    Found 1-bit register for signal <regdata_31<412>>.
+    Found 1-bit register for signal <regdata_31<411>>.
+    Found 1-bit register for signal <regdata_31<410>>.
+    Found 1-bit register for signal <regdata_31<409>>.
+    Found 1-bit register for signal <regdata_31<408>>.
+    Found 1-bit register for signal <regdata_31<407>>.
+    Found 1-bit register for signal <regdata_31<406>>.
+    Found 1-bit register for signal <regdata_31<405>>.
+    Found 1-bit register for signal <regdata_31<404>>.
+    Found 1-bit register for signal <regdata_31<403>>.
+    Found 1-bit register for signal <regdata_31<402>>.
+    Found 1-bit register for signal <regdata_31<401>>.
+    Found 1-bit register for signal <regdata_31<400>>.
+    Found 1-bit register for signal <regdata_31<399>>.
+    Found 1-bit register for signal <regdata_31<398>>.
+    Found 1-bit register for signal <regdata_31<397>>.
+    Found 1-bit register for signal <regdata_31<396>>.
+    Found 1-bit register for signal <regdata_31<395>>.
+    Found 1-bit register for signal <regdata_31<394>>.
+    Found 1-bit register for signal <regdata_31<393>>.
+    Found 1-bit register for signal <regdata_31<392>>.
+    Found 1-bit register for signal <regdata_31<391>>.
+    Found 1-bit register for signal <regdata_31<390>>.
+    Found 1-bit register for signal <regdata_31<389>>.
+    Found 1-bit register for signal <regdata_31<388>>.
+    Found 1-bit register for signal <regdata_31<387>>.
+    Found 1-bit register for signal <regdata_31<386>>.
+    Found 1-bit register for signal <regdata_31<385>>.
+    Found 1-bit register for signal <regdata_31<384>>.
+    Found 1-bit register for signal <regdata_31<383>>.
+    Found 1-bit register for signal <regdata_31<382>>.
+    Found 1-bit register for signal <regdata_31<381>>.
+    Found 1-bit register for signal <regdata_31<380>>.
+    Found 1-bit register for signal <regdata_31<379>>.
+    Found 1-bit register for signal <regdata_31<378>>.
+    Found 1-bit register for signal <regdata_31<377>>.
+    Found 1-bit register for signal <regdata_31<376>>.
+    Found 1-bit register for signal <regdata_31<375>>.
+    Found 1-bit register for signal <regdata_31<374>>.
+    Found 1-bit register for signal <regdata_31<373>>.
+    Found 1-bit register for signal <regdata_31<372>>.
+    Found 1-bit register for signal <regdata_31<371>>.
+    Found 1-bit register for signal <regdata_31<370>>.
+    Found 1-bit register for signal <regdata_31<369>>.
+    Found 1-bit register for signal <regdata_31<368>>.
+    Found 1-bit register for signal <regdata_31<367>>.
+    Found 1-bit register for signal <regdata_31<366>>.
+    Found 1-bit register for signal <regdata_31<365>>.
+    Found 1-bit register for signal <regdata_31<364>>.
+    Found 1-bit register for signal <regdata_31<363>>.
+    Found 1-bit register for signal <regdata_31<362>>.
+    Found 1-bit register for signal <regdata_31<361>>.
+    Found 1-bit register for signal <regdata_31<360>>.
+    Found 1-bit register for signal <regdata_31<359>>.
+    Found 1-bit register for signal <regdata_31<358>>.
+    Found 1-bit register for signal <regdata_31<357>>.
+    Found 1-bit register for signal <regdata_31<356>>.
+    Found 1-bit register for signal <regdata_31<355>>.
+    Found 1-bit register for signal <regdata_31<354>>.
+    Found 1-bit register for signal <regdata_31<353>>.
+    Found 1-bit register for signal <regdata_31<352>>.
+    Found 1-bit register for signal <regdata_31<351>>.
+    Found 1-bit register for signal <regdata_31<350>>.
+    Found 1-bit register for signal <regdata_31<349>>.
+    Found 1-bit register for signal <regdata_31<348>>.
+    Found 1-bit register for signal <regdata_31<347>>.
+    Found 1-bit register for signal <regdata_31<346>>.
+    Found 1-bit register for signal <regdata_31<345>>.
+    Found 1-bit register for signal <regdata_31<344>>.
+    Found 1-bit register for signal <regdata_31<343>>.
+    Found 1-bit register for signal <regdata_31<342>>.
+    Found 1-bit register for signal <regdata_31<341>>.
+    Found 1-bit register for signal <regdata_31<340>>.
+    Found 1-bit register for signal <regdata_31<339>>.
+    Found 1-bit register for signal <regdata_31<338>>.
+    Found 1-bit register for signal <regdata_31<337>>.
+    Found 1-bit register for signal <regdata_31<336>>.
+    Found 1-bit register for signal <regdata_31<335>>.
+    Found 1-bit register for signal <regdata_31<334>>.
+    Found 1-bit register for signal <regdata_31<333>>.
+    Found 1-bit register for signal <regdata_31<332>>.
+    Found 1-bit register for signal <regdata_31<331>>.
+    Found 1-bit register for signal <regdata_31<330>>.
+    Found 1-bit register for signal <regdata_31<329>>.
+    Found 1-bit register for signal <regdata_31<328>>.
+    Found 1-bit register for signal <regdata_31<327>>.
+    Found 1-bit register for signal <regdata_31<326>>.
+    Found 1-bit register for signal <regdata_31<325>>.
+    Found 1-bit register for signal <regdata_31<324>>.
+    Found 1-bit register for signal <regdata_31<323>>.
+    Found 1-bit register for signal <regdata_31<322>>.
+    Found 1-bit register for signal <regdata_31<321>>.
+    Found 1-bit register for signal <regdata_31<320>>.
+    Found 1-bit register for signal <regdata_31<319>>.
+    Found 1-bit register for signal <regdata_31<318>>.
+    Found 1-bit register for signal <regdata_31<317>>.
+    Found 1-bit register for signal <regdata_31<316>>.
+    Found 1-bit register for signal <regdata_31<315>>.
+    Found 1-bit register for signal <regdata_31<314>>.
+    Found 1-bit register for signal <regdata_31<313>>.
+    Found 1-bit register for signal <regdata_31<312>>.
+    Found 1-bit register for signal <regdata_31<311>>.
+    Found 1-bit register for signal <regdata_31<310>>.
+    Found 1-bit register for signal <regdata_31<309>>.
+    Found 1-bit register for signal <regdata_31<308>>.
+    Found 1-bit register for signal <regdata_31<307>>.
+    Found 1-bit register for signal <regdata_31<306>>.
+    Found 1-bit register for signal <regdata_31<305>>.
+    Found 1-bit register for signal <regdata_31<304>>.
+    Found 1-bit register for signal <regdata_31<303>>.
+    Found 1-bit register for signal <regdata_31<302>>.
+    Found 1-bit register for signal <regdata_31<301>>.
+    Found 1-bit register for signal <regdata_31<300>>.
+    Found 1-bit register for signal <regdata_31<299>>.
+    Found 1-bit register for signal <regdata_31<298>>.
+    Found 1-bit register for signal <regdata_31<297>>.
+    Found 1-bit register for signal <regdata_31<296>>.
+    Found 1-bit register for signal <regdata_31<295>>.
+    Found 1-bit register for signal <regdata_31<294>>.
+    Found 1-bit register for signal <regdata_31<293>>.
+    Found 1-bit register for signal <regdata_31<292>>.
+    Found 1-bit register for signal <regdata_31<291>>.
+    Found 1-bit register for signal <regdata_31<290>>.
+    Found 1-bit register for signal <regdata_31<289>>.
+    Found 1-bit register for signal <regdata_31<288>>.
+    Found 1-bit register for signal <regdata_31<287>>.
+    Found 1-bit register for signal <regdata_31<286>>.
+    Found 1-bit register for signal <regdata_31<285>>.
+    Found 1-bit register for signal <regdata_31<284>>.
+    Found 1-bit register for signal <regdata_31<283>>.
+    Found 1-bit register for signal <regdata_31<282>>.
+    Found 1-bit register for signal <regdata_31<281>>.
+    Found 1-bit register for signal <regdata_31<280>>.
+    Found 1-bit register for signal <regdata_31<279>>.
+    Found 1-bit register for signal <regdata_31<278>>.
+    Found 1-bit register for signal <regdata_31<277>>.
+    Found 1-bit register for signal <regdata_31<276>>.
+    Found 1-bit register for signal <regdata_31<275>>.
+    Found 1-bit register for signal <regdata_31<274>>.
+    Found 1-bit register for signal <regdata_31<273>>.
+    Found 1-bit register for signal <regdata_31<272>>.
+    Found 1-bit register for signal <regdata_31<271>>.
+    Found 1-bit register for signal <regdata_31<270>>.
+    Found 1-bit register for signal <regdata_31<269>>.
+    Found 1-bit register for signal <regdata_31<268>>.
+    Found 1-bit register for signal <regdata_31<267>>.
+    Found 1-bit register for signal <regdata_31<266>>.
+    Found 1-bit register for signal <regdata_31<265>>.
+    Found 1-bit register for signal <regdata_31<264>>.
+    Found 1-bit register for signal <regdata_31<263>>.
+    Found 1-bit register for signal <regdata_31<262>>.
+    Found 1-bit register for signal <regdata_31<261>>.
+    Found 1-bit register for signal <regdata_31<260>>.
+    Found 1-bit register for signal <regdata_31<259>>.
+    Found 1-bit register for signal <regdata_31<258>>.
+    Found 1-bit register for signal <regdata_31<257>>.
+    Found 1-bit register for signal <regdata_31<256>>.
+    Found 1-bit register for signal <regdata_31<255>>.
+    Found 1-bit register for signal <regdata_31<254>>.
+    Found 1-bit register for signal <regdata_31<253>>.
+    Found 1-bit register for signal <regdata_31<252>>.
+    Found 1-bit register for signal <regdata_31<251>>.
+    Found 1-bit register for signal <regdata_31<250>>.
+    Found 1-bit register for signal <regdata_31<249>>.
+    Found 1-bit register for signal <regdata_31<248>>.
+    Found 1-bit register for signal <regdata_31<247>>.
+    Found 1-bit register for signal <regdata_31<246>>.
+    Found 1-bit register for signal <regdata_31<245>>.
+    Found 1-bit register for signal <regdata_31<244>>.
+    Found 1-bit register for signal <regdata_31<243>>.
+    Found 1-bit register for signal <regdata_31<242>>.
+    Found 1-bit register for signal <regdata_31<241>>.
+    Found 1-bit register for signal <regdata_31<240>>.
+    Found 1-bit register for signal <regdata_31<239>>.
+    Found 1-bit register for signal <regdata_31<238>>.
+    Found 1-bit register for signal <regdata_31<237>>.
+    Found 1-bit register for signal <regdata_31<236>>.
+    Found 1-bit register for signal <regdata_31<235>>.
+    Found 1-bit register for signal <regdata_31<234>>.
+    Found 1-bit register for signal <regdata_31<233>>.
+    Found 1-bit register for signal <regdata_31<232>>.
+    Found 1-bit register for signal <regdata_31<231>>.
+    Found 1-bit register for signal <regdata_31<230>>.
+    Found 1-bit register for signal <regdata_31<229>>.
+    Found 1-bit register for signal <regdata_31<228>>.
+    Found 1-bit register for signal <regdata_31<227>>.
+    Found 1-bit register for signal <regdata_31<226>>.
+    Found 1-bit register for signal <regdata_31<225>>.
+    Found 1-bit register for signal <regdata_31<224>>.
+    Found 1-bit register for signal <regdata_31<223>>.
+    Found 1-bit register for signal <regdata_31<222>>.
+    Found 1-bit register for signal <regdata_31<221>>.
+    Found 1-bit register for signal <regdata_31<220>>.
+    Found 1-bit register for signal <regdata_31<219>>.
+    Found 1-bit register for signal <regdata_31<218>>.
+    Found 1-bit register for signal <regdata_31<217>>.
+    Found 1-bit register for signal <regdata_31<216>>.
+    Found 1-bit register for signal <regdata_31<215>>.
+    Found 1-bit register for signal <regdata_31<214>>.
+    Found 1-bit register for signal <regdata_31<213>>.
+    Found 1-bit register for signal <regdata_31<212>>.
+    Found 1-bit register for signal <regdata_31<211>>.
+    Found 1-bit register for signal <regdata_31<210>>.
+    Found 1-bit register for signal <regdata_31<209>>.
+    Found 1-bit register for signal <regdata_31<208>>.
+    Found 1-bit register for signal <regdata_31<207>>.
+    Found 1-bit register for signal <regdata_31<206>>.
+    Found 1-bit register for signal <regdata_31<205>>.
+    Found 1-bit register for signal <regdata_31<204>>.
+    Found 1-bit register for signal <regdata_31<203>>.
+    Found 1-bit register for signal <regdata_31<202>>.
+    Found 1-bit register for signal <regdata_31<201>>.
+    Found 1-bit register for signal <regdata_31<200>>.
+    Found 1-bit register for signal <regdata_31<199>>.
+    Found 1-bit register for signal <regdata_31<198>>.
+    Found 1-bit register for signal <regdata_31<197>>.
+    Found 1-bit register for signal <regdata_31<196>>.
+    Found 1-bit register for signal <regdata_31<195>>.
+    Found 1-bit register for signal <regdata_31<194>>.
+    Found 1-bit register for signal <regdata_31<193>>.
+    Found 1-bit register for signal <regdata_31<192>>.
+    Found 1-bit register for signal <regdata_31<191>>.
+    Found 1-bit register for signal <regdata_31<190>>.
+    Found 1-bit register for signal <regdata_31<189>>.
+    Found 1-bit register for signal <regdata_31<188>>.
+    Found 1-bit register for signal <regdata_31<187>>.
+    Found 1-bit register for signal <regdata_31<186>>.
+    Found 1-bit register for signal <regdata_31<185>>.
+    Found 1-bit register for signal <regdata_31<184>>.
+    Found 1-bit register for signal <regdata_31<183>>.
+    Found 1-bit register for signal <regdata_31<182>>.
+    Found 1-bit register for signal <regdata_31<181>>.
+    Found 1-bit register for signal <regdata_31<180>>.
+    Found 1-bit register for signal <regdata_31<179>>.
+    Found 1-bit register for signal <regdata_31<178>>.
+    Found 1-bit register for signal <regdata_31<177>>.
+    Found 1-bit register for signal <regdata_31<176>>.
+    Found 1-bit register for signal <regdata_31<175>>.
+    Found 1-bit register for signal <regdata_31<174>>.
+    Found 1-bit register for signal <regdata_31<173>>.
+    Found 1-bit register for signal <regdata_31<172>>.
+    Found 1-bit register for signal <regdata_31<171>>.
+    Found 1-bit register for signal <regdata_31<170>>.
+    Found 1-bit register for signal <regdata_31<169>>.
+    Found 1-bit register for signal <regdata_31<168>>.
+    Found 1-bit register for signal <regdata_31<167>>.
+    Found 1-bit register for signal <regdata_31<166>>.
+    Found 1-bit register for signal <regdata_31<165>>.
+    Found 1-bit register for signal <regdata_31<164>>.
+    Found 1-bit register for signal <regdata_31<163>>.
+    Found 1-bit register for signal <regdata_31<162>>.
+    Found 1-bit register for signal <regdata_31<161>>.
+    Found 1-bit register for signal <regdata_31<160>>.
+    Found 1-bit register for signal <regdata_31<159>>.
+    Found 1-bit register for signal <regdata_31<158>>.
+    Found 1-bit register for signal <regdata_31<157>>.
+    Found 1-bit register for signal <regdata_31<156>>.
+    Found 1-bit register for signal <regdata_31<155>>.
+    Found 1-bit register for signal <regdata_31<154>>.
+    Found 1-bit register for signal <regdata_31<153>>.
+    Found 1-bit register for signal <regdata_31<152>>.
+    Found 1-bit register for signal <regdata_31<151>>.
+    Found 1-bit register for signal <regdata_31<150>>.
+    Found 1-bit register for signal <regdata_31<149>>.
+    Found 1-bit register for signal <regdata_31<148>>.
+    Found 1-bit register for signal <regdata_31<147>>.
+    Found 1-bit register for signal <regdata_31<146>>.
+    Found 1-bit register for signal <regdata_31<145>>.
+    Found 1-bit register for signal <regdata_31<144>>.
+    Found 1-bit register for signal <regdata_31<143>>.
+    Found 1-bit register for signal <regdata_31<142>>.
+    Found 1-bit register for signal <regdata_31<141>>.
+    Found 1-bit register for signal <regdata_31<140>>.
+    Found 1-bit register for signal <regdata_31<139>>.
+    Found 1-bit register for signal <regdata_31<138>>.
+    Found 1-bit register for signal <regdata_31<137>>.
+    Found 1-bit register for signal <regdata_31<136>>.
+    Found 1-bit register for signal <regdata_31<135>>.
+    Found 1-bit register for signal <regdata_31<134>>.
+    Found 1-bit register for signal <regdata_31<133>>.
+    Found 1-bit register for signal <regdata_31<132>>.
+    Found 1-bit register for signal <regdata_31<131>>.
+    Found 1-bit register for signal <regdata_31<130>>.
+    Found 1-bit register for signal <regdata_31<129>>.
+    Found 1-bit register for signal <regdata_31<128>>.
+    Found 1-bit register for signal <regdata_31<127>>.
+    Found 1-bit register for signal <regdata_31<126>>.
+    Found 1-bit register for signal <regdata_31<125>>.
+    Found 1-bit register for signal <regdata_31<124>>.
+    Found 1-bit register for signal <regdata_31<123>>.
+    Found 1-bit register for signal <regdata_31<122>>.
+    Found 1-bit register for signal <regdata_31<121>>.
+    Found 1-bit register for signal <regdata_31<120>>.
+    Found 1-bit register for signal <regdata_31<119>>.
+    Found 1-bit register for signal <regdata_31<118>>.
+    Found 1-bit register for signal <regdata_31<117>>.
+    Found 1-bit register for signal <regdata_31<116>>.
+    Found 1-bit register for signal <regdata_31<115>>.
+    Found 1-bit register for signal <regdata_31<114>>.
+    Found 1-bit register for signal <regdata_31<113>>.
+    Found 1-bit register for signal <regdata_31<112>>.
+    Found 1-bit register for signal <regdata_31<111>>.
+    Found 1-bit register for signal <regdata_31<110>>.
+    Found 1-bit register for signal <regdata_31<109>>.
+    Found 1-bit register for signal <regdata_31<108>>.
+    Found 1-bit register for signal <regdata_31<107>>.
+    Found 1-bit register for signal <regdata_31<106>>.
+    Found 1-bit register for signal <regdata_31<105>>.
+    Found 1-bit register for signal <regdata_31<104>>.
+    Found 1-bit register for signal <regdata_31<103>>.
+    Found 1-bit register for signal <regdata_31<102>>.
+    Found 1-bit register for signal <regdata_31<101>>.
+    Found 1-bit register for signal <regdata_31<100>>.
+    Found 1-bit register for signal <regdata_31<99>>.
+    Found 1-bit register for signal <regdata_31<98>>.
+    Found 1-bit register for signal <regdata_31<97>>.
+    Found 1-bit register for signal <regdata_31<96>>.
+    Found 1-bit register for signal <regdata_31<95>>.
+    Found 1-bit register for signal <regdata_31<94>>.
+    Found 1-bit register for signal <regdata_31<93>>.
+    Found 1-bit register for signal <regdata_31<92>>.
+    Found 1-bit register for signal <regdata_31<91>>.
+    Found 1-bit register for signal <regdata_31<90>>.
+    Found 1-bit register for signal <regdata_31<89>>.
+    Found 1-bit register for signal <regdata_31<88>>.
+    Found 1-bit register for signal <regdata_31<87>>.
+    Found 1-bit register for signal <regdata_31<86>>.
+    Found 1-bit register for signal <regdata_31<85>>.
+    Found 1-bit register for signal <regdata_31<84>>.
+    Found 1-bit register for signal <regdata_31<83>>.
+    Found 1-bit register for signal <regdata_31<82>>.
+    Found 1-bit register for signal <regdata_31<81>>.
+    Found 1-bit register for signal <regdata_31<80>>.
+    Found 1-bit register for signal <regdata_31<79>>.
+    Found 1-bit register for signal <regdata_31<78>>.
+    Found 1-bit register for signal <regdata_31<77>>.
+    Found 1-bit register for signal <regdata_31<76>>.
+    Found 1-bit register for signal <regdata_31<75>>.
+    Found 1-bit register for signal <regdata_31<74>>.
+    Found 1-bit register for signal <regdata_31<73>>.
+    Found 1-bit register for signal <regdata_31<72>>.
+    Found 1-bit register for signal <regdata_31<71>>.
+    Found 1-bit register for signal <regdata_31<70>>.
+    Found 1-bit register for signal <regdata_31<69>>.
+    Found 1-bit register for signal <regdata_31<68>>.
+    Found 1-bit register for signal <regdata_31<67>>.
+    Found 1-bit register for signal <regdata_31<66>>.
+    Found 1-bit register for signal <regdata_31<65>>.
+    Found 1-bit register for signal <regdata_31<64>>.
+    Found 1-bit register for signal <regdata_31<63>>.
+    Found 1-bit register for signal <regdata_31<62>>.
+    Found 1-bit register for signal <regdata_31<61>>.
+    Found 1-bit register for signal <regdata_31<60>>.
+    Found 1-bit register for signal <regdata_31<59>>.
+    Found 1-bit register for signal <regdata_31<58>>.
+    Found 1-bit register for signal <regdata_31<57>>.
+    Found 1-bit register for signal <regdata_31<56>>.
+    Found 1-bit register for signal <regdata_31<55>>.
+    Found 1-bit register for signal <regdata_31<54>>.
+    Found 1-bit register for signal <regdata_31<53>>.
+    Found 1-bit register for signal <regdata_31<52>>.
+    Found 1-bit register for signal <regdata_31<51>>.
+    Found 1-bit register for signal <regdata_31<50>>.
+    Found 1-bit register for signal <regdata_31<49>>.
+    Found 1-bit register for signal <regdata_31<48>>.
+    Found 1-bit register for signal <regdata_31<47>>.
+    Found 1-bit register for signal <regdata_31<46>>.
+    Found 1-bit register for signal <regdata_31<45>>.
+    Found 1-bit register for signal <regdata_31<44>>.
+    Found 1-bit register for signal <regdata_31<43>>.
+    Found 1-bit register for signal <regdata_31<42>>.
+    Found 1-bit register for signal <regdata_31<41>>.
+    Found 1-bit register for signal <regdata_31<40>>.
+    Found 1-bit register for signal <regdata_31<39>>.
+    Found 1-bit register for signal <regdata_31<38>>.
+    Found 1-bit register for signal <regdata_31<37>>.
+    Found 1-bit register for signal <regdata_31<36>>.
+    Found 1-bit register for signal <regdata_31<35>>.
+    Found 1-bit register for signal <regdata_31<34>>.
+    Found 1-bit register for signal <regdata_31<33>>.
+    Found 1-bit register for signal <regdata_31<32>>.
+    Found 1-bit register for signal <regdata_31<31>>.
+    Found 1-bit register for signal <regdata_31<30>>.
+    Found 1-bit register for signal <regdata_31<29>>.
+    Found 1-bit register for signal <regdata_31<28>>.
+    Found 1-bit register for signal <regdata_31<27>>.
+    Found 1-bit register for signal <regdata_31<26>>.
+    Found 1-bit register for signal <regdata_31<25>>.
+    Found 1-bit register for signal <regdata_31<24>>.
+    Found 1-bit register for signal <regdata_31<23>>.
+    Found 1-bit register for signal <regdata_31<22>>.
+    Found 1-bit register for signal <regdata_31<21>>.
+    Found 1-bit register for signal <regdata_31<20>>.
+    Found 1-bit register for signal <regdata_31<19>>.
+    Found 1-bit register for signal <regdata_31<18>>.
+    Found 1-bit register for signal <regdata_31<17>>.
+    Found 1-bit register for signal <regdata_31<16>>.
+    Found 1-bit register for signal <regdata_31<15>>.
+    Found 1-bit register for signal <regdata_31<14>>.
+    Found 1-bit register for signal <regdata_31<13>>.
+    Found 1-bit register for signal <regdata_31<12>>.
+    Found 1-bit register for signal <regdata_31<11>>.
+    Found 1-bit register for signal <regdata_31<10>>.
+    Found 1-bit register for signal <regdata_31<9>>.
+    Found 1-bit register for signal <regdata_31<8>>.
+    Found 1-bit register for signal <regdata_31<7>>.
+    Found 1-bit register for signal <regdata_31<6>>.
+    Found 1-bit register for signal <regdata_31<5>>.
+    Found 1-bit register for signal <regdata_31<4>>.
+    Found 1-bit register for signal <regdata_31<3>>.
+    Found 1-bit register for signal <regdata_31<2>>.
+    Found 1-bit register for signal <regdata_31<1>>.
+    Found 1-bit register for signal <regdata_31<0>>.
+    Summary:
+	inferred 1024 D-type flip-flop(s).
+Unit <regfile> synthesized.
+
+Synthesizing Unit <ID_EXE_stage>.
+    Related source file is "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\ID_EXEstage.v".
+    Found 1-bit register for signal <rdata1_out<31>>.
+    Found 1-bit register for signal <rdata1_out<30>>.
+    Found 1-bit register for signal <rdata1_out<29>>.
+    Found 1-bit register for signal <rdata1_out<28>>.
+    Found 1-bit register for signal <rdata1_out<27>>.
+    Found 1-bit register for signal <rdata1_out<26>>.
+    Found 1-bit register for signal <rdata1_out<25>>.
+    Found 1-bit register for signal <rdata1_out<24>>.
+    Found 1-bit register for signal <rdata1_out<23>>.
+    Found 1-bit register for signal <rdata1_out<22>>.
+    Found 1-bit register for signal <rdata1_out<21>>.
+    Found 1-bit register for signal <rdata1_out<20>>.
+    Found 1-bit register for signal <rdata1_out<19>>.
+    Found 1-bit register for signal <rdata1_out<18>>.
+    Found 1-bit register for signal <rdata1_out<17>>.
+    Found 1-bit register for signal <rdata1_out<16>>.
+    Found 1-bit register for signal <rdata1_out<15>>.
+    Found 1-bit register for signal <rdata1_out<14>>.
+    Found 1-bit register for signal <rdata1_out<13>>.
+    Found 1-bit register for signal <rdata1_out<12>>.
+    Found 1-bit register for signal <rdata1_out<11>>.
+    Found 1-bit register for signal <rdata1_out<10>>.
+    Found 1-bit register for signal <rdata1_out<9>>.
+    Found 1-bit register for signal <rdata1_out<8>>.
+    Found 1-bit register for signal <rdata1_out<7>>.
+    Found 1-bit register for signal <rdata1_out<6>>.
+    Found 1-bit register for signal <rdata1_out<5>>.
+    Found 1-bit register for signal <rdata1_out<4>>.
+    Found 1-bit register for signal <rdata1_out<3>>.
+    Found 1-bit register for signal <rdata1_out<2>>.
+    Found 1-bit register for signal <rdata1_out<1>>.
+    Found 1-bit register for signal <rdata1_out<0>>.
+    Found 1-bit register for signal <rdata2_out<31>>.
+    Found 1-bit register for signal <rdata2_out<30>>.
+    Found 1-bit register for signal <rdata2_out<29>>.
+    Found 1-bit register for signal <rdata2_out<28>>.
+    Found 1-bit register for signal <rdata2_out<27>>.
+    Found 1-bit register for signal <rdata2_out<26>>.
+    Found 1-bit register for signal <rdata2_out<25>>.
+    Found 1-bit register for signal <rdata2_out<24>>.
+    Found 1-bit register for signal <rdata2_out<23>>.
+    Found 1-bit register for signal <rdata2_out<22>>.
+    Found 1-bit register for signal <rdata2_out<21>>.
+    Found 1-bit register for signal <rdata2_out<20>>.
+    Found 1-bit register for signal <rdata2_out<19>>.
+    Found 1-bit register for signal <rdata2_out<18>>.
+    Found 1-bit register for signal <rdata2_out<17>>.
+    Found 1-bit register for signal <rdata2_out<16>>.
+    Found 1-bit register for signal <rdata2_out<15>>.
+    Found 1-bit register for signal <rdata2_out<14>>.
+    Found 1-bit register for signal <rdata2_out<13>>.
+    Found 1-bit register for signal <rdata2_out<12>>.
+    Found 1-bit register for signal <rdata2_out<11>>.
+    Found 1-bit register for signal <rdata2_out<10>>.
+    Found 1-bit register for signal <rdata2_out<9>>.
+    Found 1-bit register for signal <rdata2_out<8>>.
+    Found 1-bit register for signal <rdata2_out<7>>.
+    Found 1-bit register for signal <rdata2_out<6>>.
+    Found 1-bit register for signal <rdata2_out<5>>.
+    Found 1-bit register for signal <rdata2_out<4>>.
+    Found 1-bit register for signal <rdata2_out<3>>.
+    Found 1-bit register for signal <rdata2_out<2>>.
+    Found 1-bit register for signal <rdata2_out<1>>.
+    Found 1-bit register for signal <rdata2_out<0>>.
+    Found 1-bit register for signal <imm_out<31>>.
+    Found 1-bit register for signal <imm_out<30>>.
+    Found 1-bit register for signal <imm_out<29>>.
+    Found 1-bit register for signal <imm_out<28>>.
+    Found 1-bit register for signal <imm_out<27>>.
+    Found 1-bit register for signal <imm_out<26>>.
+    Found 1-bit register for signal <imm_out<25>>.
+    Found 1-bit register for signal <imm_out<24>>.
+    Found 1-bit register for signal <imm_out<23>>.
+    Found 1-bit register for signal <imm_out<22>>.
+    Found 1-bit register for signal <imm_out<21>>.
+    Found 1-bit register for signal <imm_out<20>>.
+    Found 1-bit register for signal <imm_out<19>>.
+    Found 1-bit register for signal <imm_out<18>>.
+    Found 1-bit register for signal <imm_out<17>>.
+    Found 1-bit register for signal <imm_out<16>>.
+    Found 1-bit register for signal <imm_out<15>>.
+    Found 1-bit register for signal <imm_out<14>>.
+    Found 1-bit register for signal <imm_out<13>>.
+    Found 1-bit register for signal <imm_out<12>>.
+    Found 1-bit register for signal <imm_out<11>>.
+    Found 1-bit register for signal <imm_out<10>>.
+    Found 1-bit register for signal <imm_out<9>>.
+    Found 1-bit register for signal <imm_out<8>>.
+    Found 1-bit register for signal <imm_out<7>>.
+    Found 1-bit register for signal <imm_out<6>>.
+    Found 1-bit register for signal <imm_out<5>>.
+    Found 1-bit register for signal <imm_out<4>>.
+    Found 1-bit register for signal <imm_out<3>>.
+    Found 1-bit register for signal <imm_out<2>>.
+    Found 1-bit register for signal <imm_out<1>>.
+    Found 1-bit register for signal <imm_out<0>>.
+    Found 1-bit register for signal <opcode_out<2>>.
+    Found 1-bit register for signal <opcode_out<1>>.
+    Found 1-bit register for signal <opcode_out<0>>.
+    Found 1-bit register for signal <alusrc_out>.
+    Found 1-bit register for signal <branch_out>.
+    Found 1-bit register for signal <memwrite_out>.
+    Found 1-bit register for signal <memtoreg_out>.
+    Found 1-bit register for signal <writeenable_out>.
+    Found 1-bit register for signal <PC_OUT<31>>.
+    Found 1-bit register for signal <PC_OUT<30>>.
+    Found 1-bit register for signal <PC_OUT<29>>.
+    Found 1-bit register for signal <PC_OUT<28>>.
+    Found 1-bit register for signal <PC_OUT<27>>.
+    Found 1-bit register for signal <PC_OUT<26>>.
+    Found 1-bit register for signal <PC_OUT<25>>.
+    Found 1-bit register for signal <PC_OUT<24>>.
+    Found 1-bit register for signal <PC_OUT<23>>.
+    Found 1-bit register for signal <PC_OUT<22>>.
+    Found 1-bit register for signal <PC_OUT<21>>.
+    Found 1-bit register for signal <PC_OUT<20>>.
+    Found 1-bit register for signal <PC_OUT<19>>.
+    Found 1-bit register for signal <PC_OUT<18>>.
+    Found 1-bit register for signal <PC_OUT<17>>.
+    Found 1-bit register for signal <PC_OUT<16>>.
+    Found 1-bit register for signal <PC_OUT<15>>.
+    Found 1-bit register for signal <PC_OUT<14>>.
+    Found 1-bit register for signal <PC_OUT<13>>.
+    Found 1-bit register for signal <PC_OUT<12>>.
+    Found 1-bit register for signal <PC_OUT<11>>.
+    Found 1-bit register for signal <PC_OUT<10>>.
+    Found 1-bit register for signal <PC_OUT<9>>.
+    Found 1-bit register for signal <PC_OUT<8>>.
+    Found 1-bit register for signal <PC_OUT<7>>.
+    Found 1-bit register for signal <PC_OUT<6>>.
+    Found 1-bit register for signal <PC_OUT<5>>.
+    Found 1-bit register for signal <PC_OUT<4>>.
+    Found 1-bit register for signal <PC_OUT<3>>.
+    Found 1-bit register for signal <PC_OUT<2>>.
+    Found 1-bit register for signal <PC_OUT<1>>.
+    Found 1-bit register for signal <PC_OUT<0>>.
+    Found 1-bit register for signal <waddr_out<4>>.
+    Found 1-bit register for signal <waddr_out<3>>.
+    Found 1-bit register for signal <waddr_out<2>>.
+    Found 1-bit register for signal <waddr_out<1>>.
+    Found 1-bit register for signal <waddr_out<0>>.
+    Summary:
+	inferred 141 D-type flip-flop(s).
+Unit <ID_EXE_stage> synthesized.
+
+Synthesizing Unit <alu>.
+    Related source file is "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\alu.v".
+    Summary:
+	no macro.
+Unit <alu> synthesized.
+
+Synthesizing Unit <EXE_MEM_stage>.
+    Related source file is "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\EXE_MEMstage.v".
+    Found 1-bit register for signal <alu_out<31>>.
+    Found 1-bit register for signal <alu_out<30>>.
+    Found 1-bit register for signal <alu_out<29>>.
+    Found 1-bit register for signal <alu_out<28>>.
+    Found 1-bit register for signal <alu_out<27>>.
+    Found 1-bit register for signal <alu_out<26>>.
+    Found 1-bit register for signal <alu_out<25>>.
+    Found 1-bit register for signal <alu_out<24>>.
+    Found 1-bit register for signal <alu_out<23>>.
+    Found 1-bit register for signal <alu_out<22>>.
+    Found 1-bit register for signal <alu_out<21>>.
+    Found 1-bit register for signal <alu_out<20>>.
+    Found 1-bit register for signal <alu_out<19>>.
+    Found 1-bit register for signal <alu_out<18>>.
+    Found 1-bit register for signal <alu_out<17>>.
+    Found 1-bit register for signal <alu_out<16>>.
+    Found 1-bit register for signal <alu_out<15>>.
+    Found 1-bit register for signal <alu_out<14>>.
+    Found 1-bit register for signal <alu_out<13>>.
+    Found 1-bit register for signal <alu_out<12>>.
+    Found 1-bit register for signal <alu_out<11>>.
+    Found 1-bit register for signal <alu_out<10>>.
+    Found 1-bit register for signal <alu_out<9>>.
+    Found 1-bit register for signal <alu_out<8>>.
+    Found 1-bit register for signal <alu_out<7>>.
+    Found 1-bit register for signal <alu_out<6>>.
+    Found 1-bit register for signal <alu_out<5>>.
+    Found 1-bit register for signal <alu_out<4>>.
+    Found 1-bit register for signal <alu_out<3>>.
+    Found 1-bit register for signal <alu_out<2>>.
+    Found 1-bit register for signal <alu_out<1>>.
+    Found 1-bit register for signal <alu_out<0>>.
+    Found 1-bit register for signal <rdata2_out<31>>.
+    Found 1-bit register for signal <rdata2_out<30>>.
+    Found 1-bit register for signal <rdata2_out<29>>.
+    Found 1-bit register for signal <rdata2_out<28>>.
+    Found 1-bit register for signal <rdata2_out<27>>.
+    Found 1-bit register for signal <rdata2_out<26>>.
+    Found 1-bit register for signal <rdata2_out<25>>.
+    Found 1-bit register for signal <rdata2_out<24>>.
+    Found 1-bit register for signal <rdata2_out<23>>.
+    Found 1-bit register for signal <rdata2_out<22>>.
+    Found 1-bit register for signal <rdata2_out<21>>.
+    Found 1-bit register for signal <rdata2_out<20>>.
+    Found 1-bit register for signal <rdata2_out<19>>.
+    Found 1-bit register for signal <rdata2_out<18>>.
+    Found 1-bit register for signal <rdata2_out<17>>.
+    Found 1-bit register for signal <rdata2_out<16>>.
+    Found 1-bit register for signal <rdata2_out<15>>.
+    Found 1-bit register for signal <rdata2_out<14>>.
+    Found 1-bit register for signal <rdata2_out<13>>.
+    Found 1-bit register for signal <rdata2_out<12>>.
+    Found 1-bit register for signal <rdata2_out<11>>.
+    Found 1-bit register for signal <rdata2_out<10>>.
+    Found 1-bit register for signal <rdata2_out<9>>.
+    Found 1-bit register for signal <rdata2_out<8>>.
+    Found 1-bit register for signal <rdata2_out<7>>.
+    Found 1-bit register for signal <rdata2_out<6>>.
+    Found 1-bit register for signal <rdata2_out<5>>.
+    Found 1-bit register for signal <rdata2_out<4>>.
+    Found 1-bit register for signal <rdata2_out<3>>.
+    Found 1-bit register for signal <rdata2_out<2>>.
+    Found 1-bit register for signal <rdata2_out<1>>.
+    Found 1-bit register for signal <rdata2_out<0>>.
+    Found 1-bit register for signal <memwrite_out>.
+    Found 1-bit register for signal <memtoreg_out>.
+    Found 1-bit register for signal <writeenable_out>.
+    Found 1-bit register for signal <waddr_out<4>>.
+    Found 1-bit register for signal <waddr_out<3>>.
+    Found 1-bit register for signal <waddr_out<2>>.
+    Found 1-bit register for signal <waddr_out<1>>.
+    Found 1-bit register for signal <waddr_out<0>>.
+    Summary:
+	inferred  72 D-type flip-flop(s).
+Unit <EXE_MEM_stage> synthesized.
+
+Synthesizing Unit <MEM_WB_stage>.
+    Related source file is "C:\Users\wilso\Downloads\CZ3001_Lab4_U1820540H\lab4\MEM_WBstage.v".
+    Found 1-bit register for signal <alu_out<31>>.
+    Found 1-bit register for signal <alu_out<30>>.
+    Found 1-bit register for signal <alu_out<29>>.
+    Found 1-bit register for signal <alu_out<28>>.
+    Found 1-bit register for signal <alu_out<27>>.
+    Found 1-bit register for signal <alu_out<26>>.
+    Found 1-bit register for signal <alu_out<25>>.
+    Found 1-bit register for signal <alu_out<24>>.
+    Found 1-bit register for signal <alu_out<23>>.
+    Found 1-bit register for signal <alu_out<22>>.
+    Found 1-bit register for signal <alu_out<21>>.
+    Found 1-bit register for signal <alu_out<20>>.
+    Found 1-bit register for signal <alu_out<19>>.
+    Found 1-bit register for signal <alu_out<18>>.
+    Found 1-bit register for signal <alu_out<17>>.
+    Found 1-bit register for signal <alu_out<16>>.
+    Found 1-bit register for signal <alu_out<15>>.
+    Found 1-bit register for signal <alu_out<14>>.
+    Found 1-bit register for signal <alu_out<13>>.
+    Found 1-bit register for signal <alu_out<12>>.
+    Found 1-bit register for signal <alu_out<11>>.
+    Found 1-bit register for signal <alu_out<10>>.
+    Found 1-bit register for signal <alu_out<9>>.
+    Found 1-bit register for signal <alu_out<8>>.
+    Found 1-bit register for signal <alu_out<7>>.
+    Found 1-bit register for signal <alu_out<6>>.
+    Found 1-bit register for signal <alu_out<5>>.
+    Found 1-bit register for signal <alu_out<4>>.
+    Found 1-bit register for signal <alu_out<3>>.
+    Found 1-bit register for signal <alu_out<2>>.
+    Found 1-bit register for signal <alu_out<1>>.
+    Found 1-bit register for signal <alu_out<0>>.
+    Found 1-bit register for signal <memtoreg_out>.
+    Found 1-bit register for signal <writeenable_out>.
+    Found 1-bit register for signal <waddr_out<4>>.
+    Found 1-bit register for signal <waddr_out<3>>.
+    Found 1-bit register for signal <waddr_out<2>>.
+    Found 1-bit register for signal <waddr_out<1>>.
+    Found 1-bit register for signal <waddr_out<0>>.
+    Summary:
+	inferred  39 D-type flip-flop(s).
+Unit <MEM_WB_stage> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <pip_test> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block pip_test, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : pip_test.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx4csg225-3 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                           0
+ Number of bonded IOBs:                   0  out of    132     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.14 secs
+ 
+--> 
+
+Total memory usage is 4510592 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   25 (   0 filtered)
+Number of infos    :   21 (   0 filtered)
+
